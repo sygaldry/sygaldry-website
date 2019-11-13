@@ -1,0 +1,10 @@
+stages:
+  build:
+  - definition: NpmRune
+    version: alpine
+    command: test
+  - definition: NpmRune
+    version: alpine
+    command: install
+definitions:
+- "https://raw.githubusercontent.com/sygaldry/sygaldry-runes/feature/writeRuneDefsFile/rune-definitions.yaml"
