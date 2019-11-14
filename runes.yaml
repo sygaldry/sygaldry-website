@@ -17,4 +17,4 @@ stages:
     awsAccessKey: ${AWS_ACCESS_KEY_ID}
     awsSecretKey: ${AWS_SECRET_ACCESS_KEY}
 definitions:
-- "https://raw.githubusercontent.com/sygaldry/sygaldry-runes/feature/writeRuneDefsFile/rune-definitions.yaml"
+- "https://raw.githubusercontent.com/sygaldry/sygaldry-runes/master/rune-definitions.yaml"
