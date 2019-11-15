@@ -5,11 +5,15 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "test": "ng test --browsers ChromeHeadless --watch false",
+    "test": "echo \"Error: no test specified\" && exit 0",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sygaldry/sygaldry-website.git"
+  },
   "dependencies": {
     "@angular/animations": "~8.2.14",
     "@angular/common": "~8.2.14",
@@ -23,6 +27,12 @@
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"
   },
+  "author": "Edvin Dizdarevic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sygaldry/sygaldry-website/issues"
+  },
+  "homepage": "https://github.com/sygaldry/sygaldry-website#readme",
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.803.19",
     "@angular/cli": "~8.3.19",
