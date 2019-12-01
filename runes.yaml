@@ -1,20 +1,20 @@
 stages:
   build:
-  - definition: NpmRune
-    version: alpine
-    command: test
-  - definition: NpmRune
-    version: alpine
-    command: install
-  - definition: NpmRune
-    version: alpine
-    command: run
-    args: build
+    - definition: NpmRune
+      version: alpine
+      command: test
+    - definition: NpmRune
+      version: alpine
+      command: install
+    - definition: NpmRune
+      version: alpine
+      command: run
+      args: build
   deploy:
-  - definition: AwsRune
-    command: s3
-    args: sync dist s3://sygaldry-website --acl public-read
-    awsAccessKey: ${AWS_ACCESS_KEY_ID}
-    awsSecretKey: ${AWS_SECRET_ACCESS_KEY}
+    - definition: AwsRune
+      command: s3
+      args: sync dist s3://sygaldry-website --acl public-read
+      awsAccessKey: ${AWS_ACCESS_KEY_ID}
+      awsSecretKey: ${AWS_SECRET_ACCESS_KEY}
 definitions:
-- "https://raw.githubusercontent.com/sygaldry/sygaldry-runes/master/rune-definitions.yaml"
+  - "https://raw.githubusercontent.com/sygaldry/sygaldry-runes/master/rune-definitions.yaml"
